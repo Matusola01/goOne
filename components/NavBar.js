@@ -1,106 +1,148 @@
 import { useState } from 'react';
+import Image from 'next/image';
+import logo from '../public/logo.png';
 
-const Navbar = () => {
-	const [isOpen, setIsOpen] = useState(false);
+// function NavLink({ to, children }) {
+// 	return (
+// 		<a href={to} className={`mx-4`}>
+// 			{children}
+// 		</a>
+// 	);
+// }
 
-	const toggleMenu = () => {
-		setIsOpen(!isOpen);
-	};
-
+function MobileNav({ open, setOpen }) {
 	return (
-		<nav className="bg-gray-800">
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="flex justify-between h-16">
-					<div className="flex-shrink-0 flex items-center">
-						<a href="/" className="text-white font-bold text-xl">
-							MyNavbar
-						</a>
-					</div>
-					<div className="flex items-center sm:hidden">
-						<button
-							type="button"
-							className="text-gray-500 hover:text-white focus:outline-none focus:text-white"
-							onClick={toggleMenu}
-						>
-							<svg
-								className="h-6 w-6"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
-							>
-								{isOpen ? (
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth="2"
-										d="M6 18L18 6M6 6l12 12"
-									/>
-								) : (
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth="2"
-										d="M4 6h16M4 12h16M4 18h16"
-									/>
-								)}
-							</svg>
-						</button>
-					</div>
-					<div className="hidden sm:block">
-						<div className="ml-4 flex items-center space-x-4">
-							{/* Aquí puedes agregar tus elementos de menú */}
-							<a
-								href="/"
-								className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-							>
-								Inicio
-							</a>
-							<a
-								href="/"
-								className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-							>
-								Acerca de
-							</a>
-							<a
-								href="/"
-								className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-							>
-								Contacto
-							</a>
-							{/* Agrega más elementos de menú aquí */}
-						</div>
-					</div>
-				</div>
+		<div
+			className={`absolute index-0 z-0 block top-0 left-0 h-screen w-screen bg-[#40BAEB] transform ${
+				open ? '-translate-x-0' : '-translate-x-full'
+			} transition-transform duration-300 ease-in-out filter drop-shadow-md `}
+		>
+			<div className="flex items-center justify-center filter  bg-[#40BAEB] h-20">
+				{' '}
+				<Image
+					alt="GOON"
+					src={logo}
+					placeholder="blur"
+					width={65}
+					height={65}
+					style={{
+						maxWidth: '100%',
+						height: 'auto',
+					}}
+				/>
 			</div>
 
-			{/* Menú hamburguesa para dispositivos móviles */}
-			<div className={`${isOpen ? 'block' : 'hidden'} sm:hidden`}>
-				<div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-					{/* Aquí puedes agregar tus elementos de menú */}
-					<a
-						href="/"
-						className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-					>
-						Inicio
-					</a>
-					<a
-						href="/"
-						className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-					>
-						Acerca de
-					</a>
-					<a
-						href="/"
-						className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-					>
-						Contacto
-					</a>
-					{/* Agrega más elementos de menú aquí */}
+			<div className="flex items-center flex-col ml-4  ">
+				<a
+					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
+					style={{ fontFamily: 'Krona One, sans-serif' }}
+					href="/#"
+					onClick={() =>
+						setTimeout(() => {
+							setOpen(!open);
+						}, 200)
+					}
+				>
+					ABOUT
+				</a>
+				<a
+					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
+					style={{ fontFamily: 'Krona One, sans-serif' }}
+					href="/#"
+					onClick={() =>
+						setTimeout(() => {
+							setOpen(!open);
+						}, 200)
+					}
+				>
+					SERVICES
+				</a>
+				<a
+					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
+					style={{ fontFamily: 'Krona One, sans-serif' }}
+					href="/#"
+					onClick={() =>
+						setTimeout(() => {
+							setOpen(!open);
+						}, 200)
+					}
+				>
+					CLIENTS
+				</a>
+				<a
+					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
+					style={{ fontFamily: 'Krona One, sans-serif' }}
+					href="/#"
+					onClick={() =>
+						setTimeout(() => {
+							setOpen(!open);
+						}, 200)
+					}
+				>
+					THE AGENCY
+				</a>
+				<a
+					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
+					style={{ fontFamily: 'Krona One, sans-serif' }}
+					href="/#"
+					onClick={() =>
+						setTimeout(() => {
+							setOpen(!open);
+						}, 200)
+					}
+					id="text2"
+				>
+					CONTACT US
+				</a>
+			</div>
+		</div>
+	);
+}
+
+export default function Navbar() {
+	const [open, setOpen] = useState(false);
+
+	return (
+		<nav className="flex filter drop-shadow-md bg-black px-4 py-4 h-20 items-center">
+			<MobileNav open={open} setOpen={setOpen} />
+			<div className="w-3/12 flex items-center">
+				<Image
+					alt="GOON"
+					src={logo}
+					placeholder="blur"
+					width={65}
+					height={65}
+					style={{
+						maxWidth: '100%',
+						height: 'auto',
+					}}
+				/>
+			</div>
+			<div className="w-9/12 flex justify-end items-center">
+				<div
+					className="z-50 flex relative w-8 h-8 flex-col justify-between items-center"
+					onClick={() => {
+						setOpen(!open);
+					}}
+				>
+					{/* hamburger button */}
+					<span
+						className={`h-1 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${
+							open ? 'rotate-45 translate-y-3.5 bg-black' : 'hover:bg-[#D59A00]'
+						}`}
+					/>
+					<span
+						className={`h-1 w-full bg-white rounded-lg transition-all duration-300 ease-in-out ${
+							open ? 'invisible' : 'w-full hover:bg-[#D59A00]'
+						}`}
+					/>
+					<span
+						className={`h-1 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${
+							open ? '-rotate-45 -translate-y-3.5 bg-black' : 'hover:bg-[#D59A00]'
+						}`}
+					/>
 				</div>
 			</div>
 		</nav>
 	);
-};
-
-export default Navbar;
+}
