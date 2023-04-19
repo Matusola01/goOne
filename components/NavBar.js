@@ -13,7 +13,7 @@ import logo from '../public/logo.png';
 function MobileNav({ open, setOpen }) {
 	return (
 		<div
-			className={`absolute index-0 z-0 block top-0 left-0 h-screen w-screen bg-[#40BAEB] transform ${
+			className={`fixed z-50 block top-0 left-0 h-screen w-screen bg-[#40BAEB] transform ${
 				open ? '-translate-x-0' : '-translate-x-full'
 			} transition-transform duration-300 ease-in-out filter drop-shadow-md `}
 		>
@@ -32,7 +32,7 @@ function MobileNav({ open, setOpen }) {
 				/>
 			</div>
 
-			<div className="flex items-center flex-col ml-4  ">
+			<div className="relative flex z-50 items-center flex-col ml-4  ">
 				<a
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
@@ -103,7 +103,7 @@ export default function Navbar() {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<nav className="flex filter drop-shadow-md bg-black px-4 py-4 h-20 items-center">
+		<div className="flex filter drop-shadow-md bg-black px-4 py-4 h-20 items-center">
 			<MobileNav open={open} setOpen={setOpen} />
 			<div className="w-3/12 flex items-center">
 				<Image
@@ -143,6 +143,6 @@ export default function Navbar() {
 					/>
 				</div>
 			</div>
-		</nav>
+		</div>
 	);
 }
