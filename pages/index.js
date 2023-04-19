@@ -6,9 +6,9 @@ import Landing from '../components/Landing';
 export default function Home() {
 	return (
 		<div>
-			<div className="relative z-50">
+			{/* <div className="relative z-50">
 				<Navbar />
-			</div>
+			</div> */}
 			<Landing />
 			<About />
 		</div>

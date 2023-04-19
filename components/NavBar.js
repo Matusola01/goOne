@@ -19,24 +19,26 @@ function MobileNav({ open, setOpen }) {
 		>
 			<div className="flex items-center justify-center filter  bg-[#40BAEB] h-20">
 				{' '}
-				<Image
-					alt="GOON"
-					src={logo}
-					placeholder="blur"
-					width={65}
-					height={65}
-					style={{
-						maxWidth: '100%',
-						height: 'auto',
-					}}
-				/>
+				<a href="/#">
+					<Image
+						alt="GOON"
+						src={logo}
+						placeholder="blur"
+						width={65}
+						height={65}
+						style={{
+							maxWidth: '100%',
+							height: 'auto',
+						}}
+					/>
+				</a>
 			</div>
 
 			<div className="relative flex z-50 items-center flex-col ml-4  ">
 				<a
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
-					href="/#"
+					href="/about"
 					onClick={() =>
 						setTimeout(() => {
 							setOpen(!open);
@@ -48,7 +50,7 @@ function MobileNav({ open, setOpen }) {
 				<a
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
-					href="/#"
+					href="/services"
 					onClick={() =>
 						setTimeout(() => {
 							setOpen(!open);
@@ -60,7 +62,7 @@ function MobileNav({ open, setOpen }) {
 				<a
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
-					href="/#"
+					href="/clients"
 					onClick={() =>
 						setTimeout(() => {
 							setOpen(!open);
@@ -69,7 +71,7 @@ function MobileNav({ open, setOpen }) {
 				>
 					CLIENTS
 				</a>
-				<a
+				{/* <a
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
 					href="/#"
@@ -80,7 +82,7 @@ function MobileNav({ open, setOpen }) {
 					}
 				>
 					THE AGENCY
-				</a>
+				</a> */}
 				<a
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
@@ -106,17 +108,19 @@ export default function Navbar() {
 		<div className="flex filter drop-shadow-md bg-black px-4 py-4 h-20 items-center">
 			<MobileNav open={open} setOpen={setOpen} />
 			<div className="w-3/12 flex items-center">
-				<Image
-					alt="GOON"
-					src={logo}
-					placeholder="blur"
-					width={65}
-					height={65}
-					style={{
-						maxWidth: '100%',
-						height: 'auto',
-					}}
-				/>
+				<a href="/#">
+					<Image
+						alt="GOON"
+						src={logo}
+						placeholder="blur"
+						width={65}
+						height={65}
+						style={{
+							maxWidth: '100%',
+							height: 'auto',
+						}}
+					/>
+				</a>
 			</div>
 			<div className="w-9/12 flex justify-end items-center">
 				<div

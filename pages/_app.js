@@ -11,7 +11,9 @@ function MyApp({ Component, pageProps }) {
 				{/* <link href="url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap'" rel="stylesheet" /> */}
 			</Head>
 			<div>
-				{/* <Navbar /> */}
+				<div className="relative z-50">
+					<Navbar />
+				</div>
 				<Component {...pageProps} />
 				<Footer />
 			</div>

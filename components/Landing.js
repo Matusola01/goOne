@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Landing = () => {
 	return (
-		<div className="container">
+		<div>
 			<div className="absolute z-0 w-full h-full">
 				<video autoPlay loop muted className="w-full h-full object-cover">
 					<source
@@ -13,18 +13,18 @@ const Landing = () => {
 					/>
 				</video>
 			</div>
-			<div className="absolute top-0 left-0 z-10 flex items-center h-screen w-screen bg-black/40 justify-center">
-				<div className="mt-36 text-white font-bold text-8xl rotate-90">
-					<h1 className="p-0 m-0 text-[#D59A00]">THIS</h1>
+			<div className="fixed top-0 left-0 z-10 flex items-center h-screen w-screen bg-black/40 justify-center">
+				<div className="m-4 skew-y-12">
+					<h1 className="text-[#D59A00] font-bold text-9xl">THIS</h1>
 				</div>
-				<div className="text-white font-bold text-7xl">
-					<h1 className="p-0 m-0 text-[#40BAEB]">IS</h1>
+				<div className="m-4 skew-y-12">
+					<h1 className="text-[#40BAEB] font-bold text-9xl">IS</h1>
 				</div>
-				<div className="text-white font-bold text-9xl">
-					<h1 className="p-0 m-0 text-[#D59A00]">GO</h1>
+				<div className="m-4 skew-y-12">
+					<h1 className="text-[#D59A00] font-bold text-9xl">GO</h1>
 				</div>
-				<div className="text-white font-bold text-6xl">
-					<h1 className="p-0 m-0 text-[#40BAEB]">ON</h1>
+				<div className="m-4 skew-y-12">
+					<h1 className="text-[#40BAEB] font-bold text-9xl">ON</h1>
 				</div>
 			</div>
 		</div>

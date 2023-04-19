@@ -1,15 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 import logo from '../public/logo.png';
-function Clients() {
+function Services() {
 	return (
 		<div className="bg-black">
 			<div>
 				<Image src={logo} alt="logo"></Image>
 			</div>
 			<div className="align-items items-center p-6">
-				<h1 className="text-white font-bold text-8xl">QUIENES</h1>
-				<h1 className="text-[#40BAEB] font-bold text-8xl">CONFIAN</h1>
+				<h1 className="text-white font-bold text-8xl">NUESTROS</h1>
+				<h1 className="text-[#40BAEB] font-bold text-8xl">SERVICIOS</h1>
 				<div className="m-6 p-6">
 					<h2 className="text-white font-regular text-2xl">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis dui id turpis egestas
@@ -28,4 +28,4 @@ function Clients() {
 	);
 }
 
-export default Clients;
+export default Services;
