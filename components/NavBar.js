@@ -109,7 +109,7 @@ export default function Navbar() {
 		<div className="flex filter drop-shadow-md bg-black px-4 py-4 h-20 items-center">
 			<MobileNav open={open} setOpen={setOpen} />
 			<div className="w-3/12 flex items-center">
-				<a href="/#">
+				<Link href="/#">
 					<Image
 						alt="GOON"
 						src={logo}
@@ -121,7 +121,7 @@ export default function Navbar() {
 							height: 'auto',
 						}}
 					/>
-				</a>
+				</Link>
 			</div>
 			<div className="w-9/12 flex justify-end items-center">
 				<div
