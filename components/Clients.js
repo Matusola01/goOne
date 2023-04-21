@@ -1,26 +1,41 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '../public/logo.png';
+import Mini2 from '../public/Mini2.png';
 function Clients() {
 	return (
 		<div className="bg-black">
-			<div>
-				<Image src={logo} alt="logo"></Image>
-			</div>
-			<div className="align-items items-center p-6">
-				<h1 className="text-white font-bold text-8xl">QUIENES</h1>
-				<h1 className="text-[#40BAEB] font-bold text-8xl">CONFIAN</h1>
-				<div className="m-6 p-6">
-					<h2 className="text-white font-regular text-2xl">
+			<div className="">
+				<div className="flex items-center p-12">
+					<h1 className="text-white font-bold text-8xl m-6">NUESTROS</h1>
+					<h1 className="text-[#40BAEB] font-bold text-8xl">CLIENTES</h1>
+				</div>
+				<div className="flex items-center m-12">
+					<h2 className="font-semibold text-white text-2xl">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis dui id turpis egestas
-						molestie. Sed accumsan mattis velit eget viverra. Mauris in elementum risus. Nunc sed vehicula
-						dui. Fusce feugiat rhoncus dui, tincidunt porttitor lacus aliquet id. Aliquam id iaculis ligula.
-						Sed eros nibh, dictum a est non, feugiat pharetra enim. Praesent tincidunt eget purus vitae
-						fringilla. Vivamus a tincidunt felis, non sagittis tortor. In hac habitasse platea dictumst. Sed
-						elementum, ligula sit amet tempus porttitor, lacus felis elementum magna, in faucibus sem est
-						sed nulla. Aenean non posuere lectus. Nunc vitae justo quis massa fermentum rutrum vel a est.
-						Morbi rutrum elit neque, eu vulputate massa ornare nec. Aliquam tincidunt lorem et imperdiet
-						elementum. Pellentesque tellus tellus, mollis sit amet tempor id, porttitor id turpis.
+					</h2>
+				</div>
+				<div className="flex items-centered justify-start">
+					<div className="m-6 p-6">
+						<Image src={Mini2} alt="logo" style={{ width: '32px', height: '32px' }} className=""></Image>
+					</div>
+					<h2 className="text-white font-regular text-2xl p-12">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis dui id turpis egestas
+					</h2>
+				</div>
+				<div className="flex items-centered justify-start">
+					<div className="m-6 p-6">
+						<Image src={Mini2} alt="logo" style={{ width: '32px', height: '32px' }} className=""></Image>
+					</div>
+					<h2 className="text-white font-regular text-2xl p-12">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis dui id turpis egestas
+					</h2>
+				</div>
+				<div className="flex items-centered justify-start">
+					<div className="m-6 p-6">
+						<Image src={Mini2} alt="logo" style={{ width: '32px', height: '32px' }} className=""></Image>
+					</div>
+					<h2 className="text-white font-regular text-2xl p-12">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis dui id turpis egestas
 					</h2>
 				</div>
 			</div>

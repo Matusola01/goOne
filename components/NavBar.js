@@ -38,7 +38,7 @@ function MobileNav({ open, setOpen }) {
 				<a
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
-					href="/about"
+					href="/#"
 					onClick={() =>
 						setTimeout(() => {
 							setOpen(!open);
@@ -50,7 +50,7 @@ function MobileNav({ open, setOpen }) {
 				<a
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
-					href="/services"
+					href="/#"
 					onClick={() =>
 						setTimeout(() => {
 							setOpen(!open);
@@ -62,7 +62,7 @@ function MobileNav({ open, setOpen }) {
 				<a
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
-					href="/clients"
+					href="/#"
 					onClick={() =>
 						setTimeout(() => {
 							setOpen(!open);
