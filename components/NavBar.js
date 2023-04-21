@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import logo from '../public/logo.png';
+import Link from 'next/link';
 
 // function NavLink({ to, children }) {
 // 	return (
@@ -19,7 +20,7 @@ function MobileNav({ open, setOpen }) {
 		>
 			<div className="flex items-center justify-center filter  bg-[#40BAEB] h-20">
 				{' '}
-				<a href="/#">
+				<Link href="/#">
 					<Image
 						alt="GOON"
 						src={logo}
@@ -31,11 +32,11 @@ function MobileNav({ open, setOpen }) {
 							height: 'auto',
 						}}
 					/>
-				</a>
+				</Link>
 			</div>
 
 			<div className="relative flex z-50 items-center flex-col ml-4  ">
-				<a
+				<Link
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
 					href="/#"
@@ -46,8 +47,8 @@ function MobileNav({ open, setOpen }) {
 					}
 				>
 					ABOUT
-				</a>
-				<a
+				</Link>
+				<Link
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
 					href="/#"
@@ -58,8 +59,8 @@ function MobileNav({ open, setOpen }) {
 					}
 				>
 					SERVICES
-				</a>
-				<a
+				</Link>
+				<Link
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
 					href="/#"
@@ -70,7 +71,7 @@ function MobileNav({ open, setOpen }) {
 					}
 				>
 					CLIENTS
-				</a>
+				</Link>
 				{/* <a
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
@@ -83,7 +84,7 @@ function MobileNav({ open, setOpen }) {
 				>
 					THE AGENCY
 				</a> */}
-				<a
+				<Link
 					className="text-9xl xl:text-9xl min-[320px]:text-8xl text-black font-semibold my-4 hover:text-[#D59A00] hover:scale-125"
 					style={{ fontFamily: 'Krona One, sans-serif' }}
 					href="/#"
@@ -95,7 +96,7 @@ function MobileNav({ open, setOpen }) {
 					id="text2"
 				>
 					CONTACT US
-				</a>
+				</Link>
 			</div>
 		</div>
 	);

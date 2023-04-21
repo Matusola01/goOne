@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
@@ -6,31 +7,31 @@ const Footer = () => {
 			<div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
 				<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
 					© 2023{' '}
-					<a href="https://flowbite.com/" class="hover:underline">
+					<Link href="https://flowbite.com/" class="hover:underline">
 						GO ON
-					</a>
+					</Link>
 					. All Rights Reserved.
 				</span>
 				<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
 					<li>
-						<a href="#" class="mr-4 hover:underline md:mr-6 ">
+						<Link href="#" class="mr-4 hover:underline md:mr-6 ">
 							/INS
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#" class="mr-4 hover:underline md:mr-6">
+						<Link href="#" class="mr-4 hover:underline md:mr-6">
 							/FB
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#" class="mr-4 hover:underline md:mr-6">
+						<Link href="#" class="mr-4 hover:underline md:mr-6">
 							/IN
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#" class="hover:underline">
+						<Link href="#" class="hover:underline">
 							/@
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</div>
